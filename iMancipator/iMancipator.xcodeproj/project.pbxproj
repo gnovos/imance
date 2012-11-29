@@ -17,7 +17,6 @@
 		0C9469FF165421F400E09B05 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C9469FE165421F400E09B05 /* Default@2x.png */; };
 		0C946A01165421F400E09B05 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C946A00165421F400E09B05 /* Default-568h@2x.png */; };
 		0C946A04165421F400E09B05 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C946A02165421F400E09B05 /* MainStoryboard_iPhone.storyboard */; };
-		0C946A07165421F400E09B05 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C946A05165421F400E09B05 /* MainStoryboard_iPad.storyboard */; };
 		0C946A0A165421F400E09B05 /* LLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C946A09165421F400E09B05 /* LLViewController.m */; };
 		0CE21DB41659F8A7000E0AF6 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CE21DB31659F8A7000E0AF6 /* QuartzCore.framework */; };
 		0CE21DB61659F8AD000E0AF6 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CE21DB51659F8AD000E0AF6 /* MapKit.framework */; };
@@ -41,7 +40,6 @@
 		0C9469FE165421F400E09B05 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		0C946A00165421F400E09B05 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		0C946A03165421F400E09B05 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
-		0C946A06165421F400E09B05 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		0C946A08165421F400E09B05 /* LLViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LLViewController.h; sourceTree = "<group>"; };
 		0C946A09165421F400E09B05 /* LLViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LLViewController.m; sourceTree = "<group>"; };
 		0CE21DB31659F8A7000E0AF6 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -107,7 +105,6 @@
 				0C9469F9165421F400E09B05 /* LLAppDelegate.h */,
 				0C9469FA165421F400E09B05 /* LLAppDelegate.m */,
 				0C946A02165421F400E09B05 /* MainStoryboard_iPhone.storyboard */,
-				0C946A05165421F400E09B05 /* MainStoryboard_iPad.storyboard */,
 				0C946A08165421F400E09B05 /* LLViewController.h */,
 				0C946A09165421F400E09B05 /* LLViewController.m */,
 				0C9469F1165421F400E09B05 /* Supporting Files */,
@@ -188,7 +185,6 @@
 				0C9469FF165421F400E09B05 /* Default@2x.png in Resources */,
 				0C946A01165421F400E09B05 /* Default-568h@2x.png in Resources */,
 				0C946A04165421F400E09B05 /* MainStoryboard_iPhone.storyboard in Resources */,
-				0C946A07165421F400E09B05 /* MainStoryboard_iPad.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,14 +219,6 @@
 				0C946A03165421F400E09B05 /* en */,
 			);
 			name = MainStoryboard_iPhone.storyboard;
-			sourceTree = "<group>";
-		};
-		0C946A05165421F400E09B05 /* MainStoryboard_iPad.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0C946A06165421F400E09B05 /* en */,
-			);
-			name = MainStoryboard_iPad.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -291,10 +279,13 @@
 		0C946A0E165421F400E09B05 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iMancipator/iMancipator-Prefix.pch";
 				INFOPLIST_FILE = "iMancipator/iMancipator-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -302,10 +293,13 @@
 		0C946A0F165421F400E09B05 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iMancipator/iMancipator-Prefix.pch";
 				INFOPLIST_FILE = "iMancipator/iMancipator-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

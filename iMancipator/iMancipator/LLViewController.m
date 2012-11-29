@@ -157,10 +157,12 @@
     CALayer* layer = cell.image.layer;
     [layer setBorderWidth:1.0f];
     [layer setBorderColor:[UIColor colorWithRed:0.0f green:0.0f blue:0.0f alpha:0.2f].CGColor];
+    [cell.spinner startAnimating];
     dispatch_async(dispatch_get_main_queue(), ^{
         cell.image.image = [UIImage imageWithData:
                             [NSData dataWithContentsOfURL:
                              [NSURL URLWithString:[[data objectAtIndex:indexPath.row] objectForKey:@"image"]]]];        
+        [cell.spinner stopAnimating];
     });
     return cell;
 }

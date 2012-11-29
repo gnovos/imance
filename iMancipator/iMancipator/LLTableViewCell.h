@@ -14,6 +14,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *name;
 @property (weak, nonatomic) IBOutlet UILabel *activity;
 @property (weak, nonatomic) IBOutlet UILabel *distance;
-
+@property (weak, nonatomic) IBOutlet UIActivityIndicatorView* spinner;
 
 @end
