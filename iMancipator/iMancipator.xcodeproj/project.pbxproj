@@ -23,6 +23,7 @@
 		0CE21DB61659F8AD000E0AF6 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CE21DB51659F8AD000E0AF6 /* MapKit.framework */; };
 		0CE21DB81659F8B2000E0AF6 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CE21DB71659F8B2000E0AF6 /* CoreLocation.framework */; };
 		0CE21DBA1659F8C4000E0AF6 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CE21DB91659F8C4000E0AF6 /* Social.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		0CEA06A61667E392000C9F11 /* LLTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CEA06A51667E392000C9F11 /* LLTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +48,8 @@
 		0CE21DB51659F8AD000E0AF6 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		0CE21DB71659F8B2000E0AF6 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		0CE21DB91659F8C4000E0AF6 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		0CEA06A41667E392000C9F11 /* LLTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLTableViewCell.h; sourceTree = "<group>"; };
+		0CEA06A51667E392000C9F11 /* LLTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,10 +73,6 @@
 		0C9469DB165421F300E09B05 = {
 			isa = PBXGroup;
 			children = (
-				0CE21DB91659F8C4000E0AF6 /* Social.framework */,
-				0CE21DB71659F8B2000E0AF6 /* CoreLocation.framework */,
-				0CE21DB51659F8AD000E0AF6 /* MapKit.framework */,
-				0CE21DB31659F8A7000E0AF6 /* QuartzCore.framework */,
 				0C9469F0165421F400E09B05 /* iMancipator */,
 				0C9469E9165421F400E09B05 /* Frameworks */,
 				0C9469E7165421F400E09B05 /* Products */,
@@ -91,6 +90,10 @@
 		0C9469E9165421F400E09B05 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0CE21DB91659F8C4000E0AF6 /* Social.framework */,
+				0CE21DB71659F8B2000E0AF6 /* CoreLocation.framework */,
+				0CE21DB51659F8AD000E0AF6 /* MapKit.framework */,
+				0CE21DB31659F8A7000E0AF6 /* QuartzCore.framework */,
 				0C9469EA165421F400E09B05 /* UIKit.framework */,
 				0C9469EC165421F400E09B05 /* Foundation.framework */,
 				0C9469EE165421F400E09B05 /* CoreGraphics.framework */,
@@ -108,6 +111,8 @@
 				0C946A08165421F400E09B05 /* LLViewController.h */,
 				0C946A09165421F400E09B05 /* LLViewController.m */,
 				0C9469F1165421F400E09B05 /* Supporting Files */,
+				0CEA06A41667E392000C9F11 /* LLTableViewCell.h */,
+				0CEA06A51667E392000C9F11 /* LLTableViewCell.m */,
 			);
 			path = iMancipator;
 			sourceTree = "<group>";
@@ -197,6 +202,7 @@
 				0C9469F7165421F400E09B05 /* main.m in Sources */,
 				0C9469FB165421F400E09B05 /* LLAppDelegate.m in Sources */,
 				0C946A0A165421F400E09B05 /* LLViewController.m in Sources */,
+				0CEA06A61667E392000C9F11 /* LLTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

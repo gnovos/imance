@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MapKit/MapKit.h>
 
-@interface LLViewController : UIViewController
+@interface LLViewController : UIViewController<MKMapViewDelegate, UITableViewDelegate, UITableViewDataSource>
+
+@property (nonatomic, assign) BOOL found;
 
 @end
